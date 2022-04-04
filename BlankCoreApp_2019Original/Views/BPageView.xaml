@@ -1,0 +1,11 @@
+﻿<UserControl
+    x:Class="Prism_MouseEvent_01.Views.BPageView"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:localview="clr-namespace:Prism_MouseEvent_01"
+    xmlns:localvm="clr-namespace:Prism_MouseEvent_01.ViewModels"
+    Background="Blue">
+    <StackPanel>
+        <Label Content="B Page" />
+    </StackPanel>
+</UserControl>

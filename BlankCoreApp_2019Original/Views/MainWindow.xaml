@@ -1,0 +1,41 @@
+﻿<Window
+    x:Class="Prism_MouseEvent_01.Views.MainWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:localview="clr-namespace:Prism_MouseEvent_01.Views"
+    xmlns:localvm="clr-namespace:Prism_MouseEvent_01.ViewModels"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:prism="http://prismlibrary.com/"
+    Title="{Binding Title}"
+    Width="525"
+    Height="350"
+    prism:ViewModelLocator.AutoWireViewModel="True">
+
+    <!--<Grid>
+        <ContentControl prism:RegionManager.RegionName="ContentRegion" />
+    </Grid>-->
+
+    <!--  AページとBページのViewとViewModelのマッピング  -->
+    <Window.Resources>
+        <DataTemplate DataType="{x:Type localvm:APageViewModel}">
+            <localview:APageView />
+        </DataTemplate>
+        <DataTemplate DataType="{x:Type localvm:BPageViewModel}">
+            <localview:BPageView />
+        </DataTemplate>
+    </Window.Resources>
+
+    <Window.DataContext>
+        <localvm:MainWindowViewModel />
+    </Window.DataContext>
+
+    <DockPanel LastChildFill="True">
+        <Button
+            Command="{Binding TogglePageCommand}"
+            Content="TogglePageCommand"
+            DockPanel.Dock="Top" />
+        <!--  CurrentPageのViewModelを使用して現在の画面を表示  -->
+        <ContentControl Content="{Binding CurrentPage}" DockPanel.Dock="Bottom" />
+    </DockPanel>
+</Window>
