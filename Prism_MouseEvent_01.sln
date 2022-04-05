@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.1.32328.378
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Prism_MouseEvent_01", "BlankCoreApp_2019Original\Prism_MouseEvent_01.csproj", "{8DF8069B-8817-4496-B1AA-3B1E0FC7AE30}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Prism_MouseEvent_01", "Prism_MouseEvent_01\Prism_MouseEvent_01.csproj", "{8DF8069B-8817-4496-B1AA-3B1E0FC7AE30}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
