@@ -6,6 +6,8 @@
     <AssemblyName>Prism_MouseEvent_01</AssemblyName>
   </PropertyGroup>
   <ItemGroup>
+    <PackageReference Include="OpenCvSharp4.Windows" Version="4.5.5.20211231" />
     <PackageReference Include="Prism.DryIoc" Version="8.0.0.1909" />
+    <PackageReference Include="System.Reactive" Version="5.0.0" />
   </ItemGroup>
 </Project>

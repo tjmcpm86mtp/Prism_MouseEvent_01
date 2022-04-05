@@ -31,11 +31,16 @@
     </Window.DataContext>
 
     <DockPanel LastChildFill="True">
+
+        <ContentControl prism:RegionManager.RegionName="ContentRegion" />
+
         <Button
             Command="{Binding TogglePageCommand}"
             Content="TogglePageCommand"
             DockPanel.Dock="Top" />
         <!--  CurrentPageのViewModelを使用して現在の画面を表示  -->
         <ContentControl Content="{Binding CurrentPage}" DockPanel.Dock="Bottom" />
+
     </DockPanel>
+
 </Window>
